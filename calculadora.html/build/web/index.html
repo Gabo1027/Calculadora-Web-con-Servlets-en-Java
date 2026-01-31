@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Calculadora Web</h1>
+    <form action="CalculadoraServlet" method="post">
+        <label>Primer número:</label>
+        <input type="number" name="numero1" step="any" required><br><br>
+        
+        <label>Segundo número:</label>
+        <input type="number" name="numero2" step="any" required><br><br>
+        
+        <label>Operación:</label>
+        <select name="operacion" required>
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select><br><br>
+        
+        <button type="submit">Calcular</button>
+    </form>
+    </body>
+</html>
